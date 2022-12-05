@@ -1,19 +1,19 @@
-import React from 'react'
-import '../css/HomePage.css'
-// import LoginPage from './LoginPage'
-// import SearchPage from './SearchPage'
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "../css/HomePage.css";
 
 function HomePage() {
   return (
     <div>
-    <div id="header">
+      <div id="header">
         <button>Home</button>
-        <button>LOGIN</button>
+        <button>
+          <Link to="/loginpage">login</Link>
+        </button>
+      </div>
     </div>
-    {/* <LoginPage /> */}
-    {/* <SearchPage /> */}
-    </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
